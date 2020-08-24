@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tabitha Oanda UROP</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Ibarra+Real+Nova&display=swap" rel="stylesheet">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootbox.js"></script>
+    <script src="js/scripts.js"></script>
+</head>
+
+
+<body>
+    <div class="container-fluid">
+        <div class="row justify-content-center align-items-center beginning">
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="img1.jpg" style="width:100%">
+                    <div class="text">TABITHA OANDA -- SUMMER RESEARCH</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="img2.jpg" style="width:100%">
+                    <div class="text">POSE PREDICTION</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="img3.jpg" style="width:100%">
+                    <div class="text">RNN FOR FORECASTING</div>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+
+        <!-- ABOUT ME ROW -->
+        <div class="row justify-content-center align-items-center About">
+            <div class="col-md-4 text-center" id="about-paragraph">
+                <p>My name is Tabitha Oanda. I'm a junior (3rd year) at Boston University. I've been learning Machine
+                    Learning for a couple of months now. I'm excited to show you how I used different applications in my
+                    summer reseach project, <strong>'Animal Feature Tracking and Pose Prediction'.</strong></p>
+            </div>
+            <div class="col-md-4 text-center" id="headshot">
+                <img src="images/headshot.jpg" alt="headshot" class ="img_fluid">
+            </div>
+
+        </div>
+        <!-- ABSTRACT & VIDEO -->
+        <div class="row justify-content-center align-items-center Abstract">
+            <div class="col-md-8 text-center" id="abstract-paragraph">
+                <p>
+                    Understanding how the brain works requires the study of natural behavior. In rodents, complex
+                    behaviors can be tracked using videography. Tracking behaviors in video data manually is time
+                    consuming and subject to researcher bias. In this project, we explored the feasibility of tracking
+                    animal behavior in an automated, unbiased manner with computer vision. We collected video of a
+                    freely moving rat in an open arena and then used markerless pose prediction software, DeepLabCut
+                    (DLC), to automatically track the features of a freely behaving rat. We explored other pose
+                    prediction software packages such as Deep Pose Kit and Animal Parts Tracker, but had best results
+                    with DLC.
+                </p>
+                <p>
+                    The results obtained from the pose prediction algorithm were then used in a forecasting model that
+                    predicted the future trajectory of the rat for up to 2 seconds. These predicted trajectories can be
+                    compared with the machine generated trajectories to validate normal movement patterns or identify
+                    movement anomalies. One of the other applications of the pose prediction results is behavior
+                    classification using unsupervised deep learning methods. Utilizing data from DLC for unsupervised
+                    learning can be accomplished using software tools like MoSeq for behavior
+                    classification.
+                </p>
+            </div>
+
+        </div>
+        <!-- ICONS  -->
+        <div class="lessons">
+            <h4>WHAT DID I LEARN?</h4>
+        </div>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-4">
+                <img src="images/learn_icons/one.png" alt="curiosity icon" id="curiosity">
+                <p><span class="curiosity"><strong>CURIOSITY</strong></span></p>
+                <p><span class="curiositydef"><strong>Lesson: </strong>Uncertainty is part of the job but try
+                        anyway.</span></p>
+                <p><span class="curiositydef">In research, 'Why...' and 'How...' questions quickly become the
+                        norm.</span></p>
+                <p><span class="curiositydef">How it began ...</span></p>
+                <p><span class="curiositydef">In February 2020, I walked up to my professor at a NSBE networking event
+                        and said:</span></p>
+                <p><span class="curiositydef"> "Hi. My name is Tabitha. I'm a sophomore in Computer Science. I taught
+                        myself machine learning and I'm looking for an opportunity to use this knowledge on some
+                        real-world applications.Do you have any openings at your lab? </span></p>
+                <p><span class="curiositydef">I got this research opportunity because I was willing to try, not because
+                        I had an impressive resume. I was willing to work with my mentor and learn as much as I possible
+                        could.</span></p>
+                <p><span class="curiositydef">My professor is in Biomedical Engineering and I'm in Computer Science. At
+                        BU those 2 are not even in the same college. We discuss Neuroscience related research papers on
+                        a weekly basis. I understand about 30% of the content, but that's ok because I get to ask
+                        questions whenever stuff is unclear. What's imprtant is that I never ask the same question
+                        twice.</span></p>
+                <p><span class="curiositydef"></span> The rest is history. I was at the lab for 10 weeks over the summer
+                    and learnt way more than i bargained for. The main takeaways are:</p>
+                <ul>
+                    <li>Keep asking questions (even the 'dumb' ones).</li>
+                    <li>Keep showing up (you never know who you'll encounter).</li>
+                    <li>Keep reaching out to people you want to work with. The right person will respond.</li>
+                    <li>Don't be afraid to step out of your comfort zone (I disliked biology in high school, look at me
+                        now)</li>
+                    <li>Remeber: You're already a <strong>winner</strong> for tyring!</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <img src="images/learn_icons/two.png" alt="diligence icon" id="diligence">
+                <p><span class="diligence"><strong>DILIGENCE</strong></span></p>
+                <p><span class="diligencedef"></span><strong>Lesson: </strong>It's the tasks that you assign yourself
+                    that matter the most.</p>
+                <p><span class="diligencedef"></span>My mentor and I would often begin the week by discussing a few
+                    objectives and the methods required to achieve those objectives. There are a few times when I was
+                    going to be the first person at the lab to implement certain software, so I didn't have a reference
+                    to consult or a clear vision of the end product.</p>
+                <p><span class="diligencedef">Sometimes this was scary. What is I messed up? What is I ruuined the
+                        data?</span></p>
+                <p><span class="diligencedef">The point is that there were a few tasks my mentor wanted me to complete
+                        that were known to the both of us. There were even more tasks that I needed to do and more
+                        information that I needed to obtain in order to do the tasks efficiently -- these tasks were
+                        only known to me.</span></p>
+                <p><span class="diligencedef">What did I do?</span></p>
+                <ul>
+                    <li>I consulted Google. It was important for me to do my due diligence before reporting
+                        bugs/blockers.</li>
+                    <li>I read research papers about the technology.</li>
+                    <li>I tried a few simple tutorials.(There's a lot you can learn on YouTube and the TensorFlow docs
+                    </li>
+                    <li>I read medium articles that simplified the information.</li>
+                    <li>I documented all the unsuccessful methods I had tried in order to track my progress.</li>
+                </ul>
+                <p><span class="diligencedef">My mentor didn't need to know all the things that I did behind the scenes,
+                        but my project benefitted from me putting in the extra work.</span></p>
+
+            </div>
+            <div class="col-md-4">
+                <img src="images/learn_icons/three.png" alt="flexibility icon" id="flexibility">
+                <p><span class="product"><strong>FLEXIBILITY</strong></span></p>
+                <p><span class="flexibilitydef"><strong>Lesson: </strong>Prototypes fail and the hypothesis gets
+                        vague, but you've
+                        got to keep moving.</span></p>
+
+                <p><span class="flexibilitydef">One of the new realizations I got while working at the lab is that I
+                        often get to be my own student, teacher, and grader. This was unlike a lot of my college
+                        classes. When you start a project, you come up with the hypothesis and you develop the route to
+                        the solution. Finally, you know when you're right because it validates your hypothesis.</span>
+                </p>
+                <p><span class="flexibilitydef">We began by asking the question: 'Can we ude deep learning to annotate
+                        animal behavior?' I needed to understand how CNNs worked. It was a rude shock when i realized
+                        that my route failed me a couple of times and that my implementation of some methods were highly
+                        inefficient. It was in those moments that my mentor stepped in and suggested an alternative
+                        route to take.</span></p>
+                <p><span class="flexibilitydef"> We unexpectedly ended up answering the question: 'Can we forecast the
+                        future position of an animal using deep learning?' I ended up learning how to implement RNNs for
+                        forecasting.</span></p>
+                <p><span class="flexibilitydef">The takeaways:</span></p>
+                <ul>
+                    <li>Be flexible with your methods</li>
+                    <li>It's ok to ask for help (In fact it's wise)</li>
+                    <li>Learn to communicate efficiently</li>
+                    <li>Be open to criticism</li>
+                    <li>It's ok to get things wrong sometimes</li>
+                    <li>Again, don't be afrais to step out of your comfort zone</li>
+                </ul>
+            </div>
+        </div>
+        <!-- EXTRAS  -->
+
+        <div class="row justify-content-center align-items-center resources">
+
+            <!-- Aerial Image  -->
+            <div class="col-md-4 text-center" id="about-paragraph">
+                <img src="images/aerials/aer2.jpg" class="img-fluid" id="aerial" alt="aerial-image">
+            </div>
+            <!-- Resources  -->
+            <div class="what">
+                <h4>RESOURCES</h4>
+            </div>
+            <div class="col-md-4 text-center" id="about-paragraph">
+                <div class="row justify-content-center align-items-center aerials">
+                    <button class="button button1">Computer Vision & Aerials</button>
+                </div>
+                <div class="row justify-content-center align-items-center computer-vision">
+                    <button class="button button2">Computer Vision</button>
+                </div>
+                <div class="row justify-content-center align-items-center pose-prediction">
+                    <button class="button button3">Pose Prediction</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
